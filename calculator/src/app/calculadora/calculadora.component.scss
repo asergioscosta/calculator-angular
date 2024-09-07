@@ -1,0 +1,148 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.calculadora {
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 20px;
+    max-width: 320px;
+    width: 100%;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+h2 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+input[type="number"],
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: #f2f2f7;
+    font-size: 14px;
+    color: #333;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+    outline: none;
+    transition: background-color 0.3s;
+    box-sizing: border-box;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+input[type="number"]:focus,
+input[type="text"]:focus {
+    background-color: #e5e5ea;
+}
+
+label {
+    font-size: 14px;
+    color: #7d7d7d;
+    text-align: left;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.operacoes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+button.btn-operacao {
+    background-color: #ff3b30;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.2s;
+    width: calc(50% - 10px);
+    box-sizing: border-box;
+    margin: 5px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+button.btn-operacao:hover {
+    background-color: #c82333;
+}
+
+button.btn-operacao:active {
+    transform: scale(0.98);
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.2s;
+    width: 48%;
+}
+
+button.equal {
+    background-color: #007aff;
+    color: white;
+}
+
+button.clear {
+    background-color: #ff3b30;
+    color: white;
+}
+
+button:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+button.equal:hover {
+    background-color: #005bb5;
+}
+
+button.clear:hover {
+    background-color: #c82333;
+}
